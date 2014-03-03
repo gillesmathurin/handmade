@@ -1880,12 +1880,13 @@ display: none;
 
 slogan {color: white;
 position: absolute;
-width: 45%;
+width: 50%;
 float: left;
 clear: both;
 font-size: 15px;
 letter-spacing: 1px;
 margin-top: 30px;
+display: block;
 }
 
 #decription_project {color: white;
