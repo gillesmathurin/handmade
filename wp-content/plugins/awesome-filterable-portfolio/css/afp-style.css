@@ -57,6 +57,7 @@ li.afp-single-item::before {
 
 li.afp-single-item:hover::before {
 	background: rgba(65, 61, 59, .5);
+  max-height: 266px;
 }
 
 li.afp-single-item>a.colorbox {
