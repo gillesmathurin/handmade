@@ -1,0 +1,112 @@
+/*** RESTTING ***/
+ul#afp-filter, ul#afp-filter li, dl.afp-items, li.afp-single-item, ul.afp-item-details, ul.afp-item-details li{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color:#464646;
+}
+
+ul#afp-filter a{
+	color:#464646;
+	text-decoration: none;
+	padding: 2px 3px 2px 3px;
+	background-color: #a19d9b;
+}
+
+/****************/
+
+ul#afp-filter{
+	display: block;
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+ul#afp-filter li{
+	display: inline-block;
+	padding-right: 20px;
+}
+
+ul.afp-items{
+	display: block;
+	list-style: none;
+}
+
+li.afp-single-item{
+	float: left;
+	position: relative;
+  overflow: hidden;
+  margin-right:5px;
+  margin-bottom: 5px;
+  width:455px;
+
+  /* Only the -webkit- prefix is required these days */
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+li.afp-single-item::before {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: transparent;
+	transition: background .35s ease-out;
+}
+
+li.afp-single-item:hover::before {
+	background: rgba(65, 61, 59, .5);
+}
+
+li.afp-single-item>a.colorbox {
+	display: block;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+div.afp-item-details{
+	display: block;
+	list-style: none;
+	position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+
+  transition: -webkit-transform .35s ease-out;
+  transition:         transform .35s ease-out;
+}
+
+li.afp-single-item:hover div.afp-item-details {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+div.afp-item-details:first-child {
+  -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+          transform: translateY( calc(-100% - 10px) );
+
+  transition: -webkit-transform .35s ease-out;
+  transition:         transform .35s ease-out;
+}
+
+li.afp-single-item:hover div.afp-item-details:first-child {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);	
+}
+
+.afp-active-cat{
+	font-weight: bold;
+}
+
+/*** Clear Fix ***/
+.afp-clear{
+	clear: both;
+}
